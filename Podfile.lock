@@ -1,0 +1,30 @@
+PODS:
+  - GoogleWebRTC (1.1.26791)
+  - JRSwizzle (1.0)
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - GoogleWebRTC (~> 1.1)
+  - JRSwizzle
+  - Mantle
+  - SocketRocket
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GoogleWebRTC
+    - JRSwizzle
+    - Mantle
+    - SocketRocket
+
+SPEC CHECKSUMS:
+  GoogleWebRTC: 3a77881ff1346f8438d3d71a07ca7312cb549f73
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: 5151e9c95d6c685778d8626272c8ec4f0ad07cea
+
+COCOAPODS: 1.5.3

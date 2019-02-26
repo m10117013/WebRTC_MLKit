@@ -7,15 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96BA8FC42D02CA0C542FB25E /* libPods-WeiWebRTC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9599C5D53E2C29CB989B73B4 /* libPods-WeiWebRTC.a */; };
+		B60332E32224E06800477947 /* WWFaceDetectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B60332E22224E06800477947 /* WWFaceDetectionItem.m */; };
+		B60332E62224E17F00477947 /* VNFaceObservation+WWFaceDetectionItemAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B60332E52224E17F00477947 /* VNFaceObservation+WWFaceDetectionItemAdaptor.m */; };
+		B60332E92224E7D400477947 /* WWFaceDetectionResultsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B60332E82224E7D400477947 /* WWFaceDetectionResultsItem.m */; };
+		B60A9F992222757C00A38A40 /* WWSignalingClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9F982222757C00A38A40 /* WWSignalingClient.m */; };
+		B60A9FA02222792000A38A40 /* WWFakeSignalingClientConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9F9F2222792000A38A40 /* WWFakeSignalingClientConfigure.m */; };
+		B60A9FA422229EFE00A38A40 /* WWMessagingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9FA322229EFE00A38A40 /* WWMessagingItem.m */; };
+		B60A9FA82222C53900A38A40 /* RTCIceCandidate+WWCandidatesItemTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9FA72222C53900A38A40 /* RTCIceCandidate+WWCandidatesItemTransfer.m */; };
+		B60A9FAB2222C79900A38A40 /* WWCandidatesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9FAA2222C79900A38A40 /* WWCandidatesItem.m */; };
+		B60A9FAF2222DDBD00A38A40 /* WWChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9FAE2222DDBD00A38A40 /* WWChatViewController.m */; };
+		B60A9FB22223FBB300A38A40 /* RTCCameraVideoCapturer+FaceDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9FB12223FBB300A38A40 /* RTCCameraVideoCapturer+FaceDetection.m */; };
 		B60C81812220ECCD00DBF3B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C81802220ECCD00DBF3B0 /* AppDelegate.m */; };
 		B60C81842220ECCD00DBF3B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C81832220ECCD00DBF3B0 /* ViewController.m */; };
 		B60C81872220ECCD00DBF3B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60C81852220ECCD00DBF3B0 /* Main.storyboard */; };
 		B60C81892220ECCF00DBF3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60C81882220ECCF00DBF3B0 /* Assets.xcassets */; };
 		B60C818C2220ECCF00DBF3B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60C818A2220ECCF00DBF3B0 /* LaunchScreen.storyboard */; };
 		B60C818F2220ECCF00DBF3B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C818E2220ECCF00DBF3B0 /* main.m */; };
+		B60C81982220EE1B00DBF3B0 /* WWWebRTCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C81972220EE1B00DBF3B0 /* WWWebRTCClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6268C7E8251359D5FB074E2B /* Pods-WeiWebRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiWebRTC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeiWebRTC/Pods-WeiWebRTC.debug.xcconfig"; sourceTree = "<group>"; };
+		9599C5D53E2C29CB989B73B4 /* libPods-WeiWebRTC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeiWebRTC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60332E12224E06800477947 /* WWFaceDetectionItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWFaceDetectionItem.h; sourceTree = "<group>"; };
+		B60332E22224E06800477947 /* WWFaceDetectionItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWFaceDetectionItem.m; sourceTree = "<group>"; };
+		B60332E42224E17F00477947 /* VNFaceObservation+WWFaceDetectionItemAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VNFaceObservation+WWFaceDetectionItemAdaptor.h"; sourceTree = "<group>"; };
+		B60332E52224E17F00477947 /* VNFaceObservation+WWFaceDetectionItemAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "VNFaceObservation+WWFaceDetectionItemAdaptor.m"; sourceTree = "<group>"; };
+		B60332E72224E7D400477947 /* WWFaceDetectionResultsItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWFaceDetectionResultsItem.h; sourceTree = "<group>"; };
+		B60332E82224E7D400477947 /* WWFaceDetectionResultsItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWFaceDetectionResultsItem.m; sourceTree = "<group>"; };
+		B60A9F962222739400A38A40 /* WeiWebRTCPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiWebRTCPrefixHeader.pch; sourceTree = "<group>"; };
+		B60A9F972222757C00A38A40 /* WWSignalingClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWSignalingClient.h; sourceTree = "<group>"; };
+		B60A9F982222757C00A38A40 /* WWSignalingClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWSignalingClient.m; sourceTree = "<group>"; };
+		B60A9F9B2222762E00A38A40 /* WWSignalingClientConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWSignalingClientConfigure.h; sourceTree = "<group>"; };
+		B60A9F9E2222792000A38A40 /* WWFakeSignalingClientConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWFakeSignalingClientConfigure.h; sourceTree = "<group>"; };
+		B60A9F9F2222792000A38A40 /* WWFakeSignalingClientConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWFakeSignalingClientConfigure.m; sourceTree = "<group>"; };
+		B60A9FA222229EFE00A38A40 /* WWMessagingItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWMessagingItem.h; sourceTree = "<group>"; };
+		B60A9FA322229EFE00A38A40 /* WWMessagingItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWMessagingItem.m; sourceTree = "<group>"; };
+		B60A9FA62222C53900A38A40 /* RTCIceCandidate+WWCandidatesItemTransfer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTCIceCandidate+WWCandidatesItemTransfer.h"; sourceTree = "<group>"; };
+		B60A9FA72222C53900A38A40 /* RTCIceCandidate+WWCandidatesItemTransfer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RTCIceCandidate+WWCandidatesItemTransfer.m"; sourceTree = "<group>"; };
+		B60A9FA92222C79900A38A40 /* WWCandidatesItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWCandidatesItem.h; sourceTree = "<group>"; };
+		B60A9FAA2222C79900A38A40 /* WWCandidatesItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWCandidatesItem.m; sourceTree = "<group>"; };
+		B60A9FAD2222DDBD00A38A40 /* WWChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWChatViewController.h; sourceTree = "<group>"; };
+		B60A9FAE2222DDBD00A38A40 /* WWChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWChatViewController.m; sourceTree = "<group>"; };
+		B60A9FB02223FBB300A38A40 /* RTCCameraVideoCapturer+FaceDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTCCameraVideoCapturer+FaceDetection.h"; sourceTree = "<group>"; };
+		B60A9FB12223FBB300A38A40 /* RTCCameraVideoCapturer+FaceDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RTCCameraVideoCapturer+FaceDetection.m"; sourceTree = "<group>"; };
 		B60C817C2220ECCD00DBF3B0 /* WeiWebRTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiWebRTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60C817F2220ECCD00DBF3B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B60C81802220ECCD00DBF3B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +62,9 @@
 		B60C818B2220ECCF00DBF3B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B60C818D2220ECCF00DBF3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B60C818E2220ECCF00DBF3B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B60C81962220EE1B00DBF3B0 /* WWWebRTCClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWWebRTCClient.h; sourceTree = "<group>"; };
+		B60C81972220EE1B00DBF3B0 /* WWWebRTCClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWWebRTCClient.m; sourceTree = "<group>"; };
+		CE23785758EB40673C190BFA /* Pods-WeiWebRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiWebRTC.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeiWebRTC/Pods-WeiWebRTC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +72,75 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BA8FC42D02CA0C542FB25E /* libPods-WeiWebRTC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22B20E0C420CE4C64633A00B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9599C5D53E2C29CB989B73B4 /* libPods-WeiWebRTC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B60A9F9A2222762000A38A40 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B60A9F9B2222762E00A38A40 /* WWSignalingClientConfigure.h */,
+				B60A9F9E2222792000A38A40 /* WWFakeSignalingClientConfigure.h */,
+				B60A9F9F2222792000A38A40 /* WWFakeSignalingClientConfigure.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B60A9FA122229EDA00A38A40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B60332E72224E7D400477947 /* WWFaceDetectionResultsItem.h */,
+				B60332E82224E7D400477947 /* WWFaceDetectionResultsItem.m */,
+				B60332E12224E06800477947 /* WWFaceDetectionItem.h */,
+				B60332E22224E06800477947 /* WWFaceDetectionItem.m */,
+				B60A9FA222229EFE00A38A40 /* WWMessagingItem.h */,
+				B60A9FA322229EFE00A38A40 /* WWMessagingItem.m */,
+				B60A9FA92222C79900A38A40 /* WWCandidatesItem.h */,
+				B60A9FAA2222C79900A38A40 /* WWCandidatesItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B60A9FA52222C51C00A38A40 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B60A9FA62222C53900A38A40 /* RTCIceCandidate+WWCandidatesItemTransfer.h */,
+				B60A9FA72222C53900A38A40 /* RTCIceCandidate+WWCandidatesItemTransfer.m */,
+				B60A9FB02223FBB300A38A40 /* RTCCameraVideoCapturer+FaceDetection.h */,
+				B60A9FB12223FBB300A38A40 /* RTCCameraVideoCapturer+FaceDetection.m */,
+				B60332E42224E17F00477947 /* VNFaceObservation+WWFaceDetectionItemAdaptor.h */,
+				B60332E52224E17F00477947 /* VNFaceObservation+WWFaceDetectionItemAdaptor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B60A9FAC2222DD8200A38A40 /* ChatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B60A9FAD2222DDBD00A38A40 /* WWChatViewController.h */,
+				B60A9FAE2222DDBD00A38A40 /* WWChatViewController.m */,
+			);
+			path = ChatViewController;
+			sourceTree = "<group>";
+		};
 		B60C81732220ECCD00DBF3B0 = {
 			isa = PBXGroup;
 			children = (
 				B60C817E2220ECCD00DBF3B0 /* WeiWebRTC */,
 				B60C817D2220ECCD00DBF3B0 /* Products */,
+				EB00724594710BA2A1DFAAB6 /* Pods */,
+				22B20E0C420CE4C64633A00B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +155,9 @@
 		B60C817E2220ECCD00DBF3B0 /* WeiWebRTC */ = {
 			isa = PBXGroup;
 			children = (
+				B60A9FA52222C51C00A38A40 /* Category */,
+				B60A9FAC2222DD8200A38A40 /* ChatViewController */,
+				B60C81952220EE0700DBF3B0 /* Client */,
 				B60C817F2220ECCD00DBF3B0 /* AppDelegate.h */,
 				B60C81802220ECCD00DBF3B0 /* AppDelegate.m */,
 				B60C81822220ECCD00DBF3B0 /* ViewController.h */,
@@ -67,8 +167,31 @@
 				B60C818A2220ECCF00DBF3B0 /* LaunchScreen.storyboard */,
 				B60C818D2220ECCF00DBF3B0 /* Info.plist */,
 				B60C818E2220ECCF00DBF3B0 /* main.m */,
+				B60A9F962222739400A38A40 /* WeiWebRTCPrefixHeader.pch */,
 			);
 			path = WeiWebRTC;
+			sourceTree = "<group>";
+		};
+		B60C81952220EE0700DBF3B0 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				B60A9F9A2222762000A38A40 /* Config */,
+				B60A9FA122229EDA00A38A40 /* Model */,
+				B60C81962220EE1B00DBF3B0 /* WWWebRTCClient.h */,
+				B60C81972220EE1B00DBF3B0 /* WWWebRTCClient.m */,
+				B60A9F972222757C00A38A40 /* WWSignalingClient.h */,
+				B60A9F982222757C00A38A40 /* WWSignalingClient.m */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		EB00724594710BA2A1DFAAB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6268C7E8251359D5FB074E2B /* Pods-WeiWebRTC.debug.xcconfig */,
+				CE23785758EB40673C190BFA /* Pods-WeiWebRTC.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B60C81922220ECCF00DBF3B0 /* Build configuration list for PBXNativeTarget "WeiWebRTC" */;
 			buildPhases = (
+				4FB8F3CA2C1092F9C26066F2 /* [CP] Check Pods Manifest.lock */,
 				B60C81782220ECCD00DBF3B0 /* Sources */,
 				B60C81792220ECCD00DBF3B0 /* Frameworks */,
 				B60C817A2220ECCD00DBF3B0 /* Resources */,
+				235332ED90C7FB82CFD69134 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,14 +261,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		235332ED90C7FB82CFD69134 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeiWebRTC/Pods-WeiWebRTC-frameworks.sh",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeiWebRTC/Pods-WeiWebRTC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FB8F3CA2C1092F9C26066F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeiWebRTC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B60C81782220ECCD00DBF3B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60A9FAB2222C79900A38A40 /* WWCandidatesItem.m in Sources */,
+				B60A9FB22223FBB300A38A40 /* RTCCameraVideoCapturer+FaceDetection.m in Sources */,
 				B60C81842220ECCD00DBF3B0 /* ViewController.m in Sources */,
 				B60C818F2220ECCF00DBF3B0 /* main.m in Sources */,
+				B60A9FA02222792000A38A40 /* WWFakeSignalingClientConfigure.m in Sources */,
+				B60A9FAF2222DDBD00A38A40 /* WWChatViewController.m in Sources */,
+				B60C81982220EE1B00DBF3B0 /* WWWebRTCClient.m in Sources */,
+				B60A9FA82222C53900A38A40 /* RTCIceCandidate+WWCandidatesItemTransfer.m in Sources */,
+				B60A9F992222757C00A38A40 /* WWSignalingClient.m in Sources */,
+				B60A9FA422229EFE00A38A40 /* WWMessagingItem.m in Sources */,
+				B60332E92224E7D400477947 /* WWFaceDetectionResultsItem.m in Sources */,
 				B60C81812220ECCD00DBF3B0 /* AppDelegate.m in Sources */,
+				B60332E62224E17F00477947 /* VNFaceObservation+WWFaceDetectionItemAdaptor.m in Sources */,
+				B60332E32224E06800477947 /* WWFaceDetectionItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +466,14 @@
 		};
 		B60C81932220ECCF00DBF3B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6268C7E8251359D5FB074E2B /* Pods-WeiWebRTC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7Y9ZG8Q9J;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = WeiWebRTC/WeiWebRTCPrefixHeader.pch;
 				INFOPLIST_FILE = WeiWebRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,15 +481,21 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tw.wei.snake.test.WeiWebRTC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		B60C81942220ECCF00DBF3B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE23785758EB40673C190BFA /* Pods-WeiWebRTC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7Y9ZG8Q9J;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = WeiWebRTC/WeiWebRTCPrefixHeader.pch;
 				INFOPLIST_FILE = WeiWebRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +503,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tw.wei.snake.test.WeiWebRTC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

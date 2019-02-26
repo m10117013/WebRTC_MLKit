@@ -1,0 +1,16 @@
+//
+//  WeiWebRTCPrefixHeader.pch
+//  WeiWebRTC
+//
+//  Created by wei on 2019/2/24.
+//  Copyright © 2019 wei. All rights reserved.
+//
+
+#ifndef WeiWebRTCPrefixHeader_pch
+#define WeiWebRTCPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "SystemDef.h"
+
+#endif /* WeiWebRTCPrefixHeader_pch */

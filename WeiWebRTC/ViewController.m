@@ -7,17 +7,27 @@
 //
 
 #import "ViewController.h"
+#import "WWWebRTCClient.h"
+#import "WWChatViewController.h"
 
 @interface ViewController ()
 
+@property (strong, nonatomic) WWWebRTCClient *client;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.client = [[WWWebRTCClient alloc] init];
+    [self.client start];
 }
 
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.destinationViewController isKindOfClass:[WWChatViewController class]]) {
+        ((WWChatViewController *)segue.destinationViewController).rtcClient = self.client;
+    }
+}
 
 @end
