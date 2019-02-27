@@ -4,4 +4,3 @@ before_install:
 language: objective-c
 xcode_workspace: WeiWebRTC.xcworkspace # path to your xcodeproj folder
 xcode_scheme: WeiWebRTC
-xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
