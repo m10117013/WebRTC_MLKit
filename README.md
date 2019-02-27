@@ -1,10 +1,11 @@
 # WebRTC_MLKit
 
+[![Build Status](https://travis-ci.com/m10117013/WebRTC_MLKit.svg?branch=master)](https://travis-ci.com/m10117013/WebRTC_MLKit)
+
 ## Requirements
 * Xcode10
-* 
 
-## HOW TO USE
+## How to use
 
 1. Start the signaling server:
     1. Navigate to the `signaling` folder.
@@ -17,7 +18,7 @@
  	2. modify your signaling server Address (Default port is 8080)
 		
 		> e.g http://172.20.10.3:8080
-4. dddd
+4. start app
 
 
 
