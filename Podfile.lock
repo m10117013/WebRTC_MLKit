@@ -7,7 +7,7 @@ PODS:
   - SocketRocket (0.5.1)
 
 DEPENDENCIES:
-  - GoogleWebRTC (~> 1.1)
+  - GoogleWebRTC
   - JRSwizzle
   - Mantle
   - SocketRocket
@@ -25,6 +25,6 @@ SPEC CHECKSUMS:
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
-PODFILE CHECKSUM: 5151e9c95d6c685778d8626272c8ec4f0ad07cea
+PODFILE CHECKSUM: 903ab2eed565447e12f56053049f0450bdb1bb34
 
 COCOAPODS: 1.5.3

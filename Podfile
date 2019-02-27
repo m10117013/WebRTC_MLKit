@@ -7,7 +7,7 @@ target 'WeiWebRTC' do
 
   # Pods for WeiWebRTC
 
-    pod 'GoogleWebRTC', '~> 1.1'
+    pod 'GoogleWebRTC'
     pod 'SocketRocket'
     pod 'Mantle'
     pod 'JRSwizzle'
