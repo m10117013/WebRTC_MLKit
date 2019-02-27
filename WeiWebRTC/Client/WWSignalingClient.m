@@ -6,11 +6,12 @@
 //  Copyright © 2019 wei. All rights reserved.
 //
 
-#define SSWCLOG(fmt, ...) NSLog(fmt, ##__VA_ARGS__)
+#define SSWCLOG(fmt, ...) NSLog(@"SSWCLOG : %@", [NSString stringWithFormat:fmt, ##__VA_ARGS__])
+
 
 #import "WWSignalingClient.h"
 #import "SRWebSocket.h"
-#import "WWFakeSignalingClientConfigure.h"
+#import "WWDefaultSignalingClientConfigure.h"
 
 #import <WebRTC/RTCSessionDescription.h>
 #import <WebRTC/RTCIceCandidate.h>
@@ -30,7 +31,7 @@
 - (id<WWSignalingClientConfigure>)configure {
     if (!_configure) {
         //if don't assign configure using fake configure
-        _configure = [[WWFakeSignalingClientConfigure alloc] init];
+        _configure = [[WWDefaultSignalingClientConfigure alloc] init];
     }
     return _configure;
 }
@@ -47,8 +48,8 @@
     if (self.webSocketClient) {
         [self.webSocketClient close];
     }
-    SSWCLOG(@"connect to signaling server with info : %@",[self.configure SignalingServerInfo]);
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:[self.configure SignalingServerInfo]]];
+    SSWCLOG(@"connect to signaling server with info : %@",[self.configure signalingServerInfo]);
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:[self.configure signalingServerInfo]]];
     self.webSocketClient = [[SRWebSocket alloc] initWithURLRequest:request];
     self.webSocketClient.delegate = self;
     [self.webSocketClient open];
@@ -122,10 +123,6 @@
     }
     SSWCLOG(@"webSocket did-open");
 }
-
-//- (void)webSocket:(SRWebSocket *)webSocket didReceiveMessageWithString:(NSString *)string;
-
-//- (void)webSocket:(SRWebSocket *)webSocket didReceiveMessageWithData:(NSData *)data;
 
 - (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error {
     if (self.delegate && [self.delegate respondsToSelector:@selector(WWSignalingClientDidConnect:withError:)]) {

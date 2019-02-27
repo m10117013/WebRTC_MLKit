@@ -17,6 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface VNFaceObservation (WWFaceDetectionItemAdaptor)
 
+/**
+ transfer to WWFaceDetectionItem
+
+ @return item
+ */
 - (WWFaceDetectionItem *)toWWFaceDetectionItem;
 
 @end

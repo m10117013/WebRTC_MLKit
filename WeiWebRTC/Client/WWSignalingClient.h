@@ -38,7 +38,7 @@
 /**
  configure information
  */
-@property (copy, nonatomic) id<WWSignalingClientConfigure> configure;
+@property (strong, nonatomic) id<WWSignalingClientConfigure> configure;
 
 /**
  delegate

@@ -12,14 +12,14 @@
 		B60332E62224E17F00477947 /* VNFaceObservation+WWFaceDetectionItemAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B60332E52224E17F00477947 /* VNFaceObservation+WWFaceDetectionItemAdaptor.m */; };
 		B60332E92224E7D400477947 /* WWFaceDetectionResultsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B60332E82224E7D400477947 /* WWFaceDetectionResultsItem.m */; };
 		B60A9F992222757C00A38A40 /* WWSignalingClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9F982222757C00A38A40 /* WWSignalingClient.m */; };
-		B60A9FA02222792000A38A40 /* WWFakeSignalingClientConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9F9F2222792000A38A40 /* WWFakeSignalingClientConfigure.m */; };
+		B60A9FA02222792000A38A40 /* WWDefaultSignalingClientConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9F9F2222792000A38A40 /* WWDefaultSignalingClientConfigure.m */; };
 		B60A9FA422229EFE00A38A40 /* WWMessagingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9FA322229EFE00A38A40 /* WWMessagingItem.m */; };
 		B60A9FA82222C53900A38A40 /* RTCIceCandidate+WWCandidatesItemTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9FA72222C53900A38A40 /* RTCIceCandidate+WWCandidatesItemTransfer.m */; };
 		B60A9FAB2222C79900A38A40 /* WWCandidatesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9FAA2222C79900A38A40 /* WWCandidatesItem.m */; };
 		B60A9FAF2222DDBD00A38A40 /* WWChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9FAE2222DDBD00A38A40 /* WWChatViewController.m */; };
 		B60A9FB22223FBB300A38A40 /* RTCCameraVideoCapturer+FaceDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9FB12223FBB300A38A40 /* RTCCameraVideoCapturer+FaceDetection.m */; };
 		B60C81812220ECCD00DBF3B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C81802220ECCD00DBF3B0 /* AppDelegate.m */; };
-		B60C81842220ECCD00DBF3B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C81832220ECCD00DBF3B0 /* ViewController.m */; };
+		B60C81842220ECCD00DBF3B0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C81832220ECCD00DBF3B0 /* HomeViewController.m */; };
 		B60C81872220ECCD00DBF3B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60C81852220ECCD00DBF3B0 /* Main.storyboard */; };
 		B60C81892220ECCF00DBF3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60C81882220ECCF00DBF3B0 /* Assets.xcassets */; };
 		B60C818C2220ECCF00DBF3B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60C818A2220ECCF00DBF3B0 /* LaunchScreen.storyboard */; };
@@ -40,8 +40,8 @@
 		B60A9F972222757C00A38A40 /* WWSignalingClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWSignalingClient.h; sourceTree = "<group>"; };
 		B60A9F982222757C00A38A40 /* WWSignalingClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWSignalingClient.m; sourceTree = "<group>"; };
 		B60A9F9B2222762E00A38A40 /* WWSignalingClientConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWSignalingClientConfigure.h; sourceTree = "<group>"; };
-		B60A9F9E2222792000A38A40 /* WWFakeSignalingClientConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWFakeSignalingClientConfigure.h; sourceTree = "<group>"; };
-		B60A9F9F2222792000A38A40 /* WWFakeSignalingClientConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWFakeSignalingClientConfigure.m; sourceTree = "<group>"; };
+		B60A9F9E2222792000A38A40 /* WWDefaultSignalingClientConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWDefaultSignalingClientConfigure.h; sourceTree = "<group>"; };
+		B60A9F9F2222792000A38A40 /* WWDefaultSignalingClientConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDefaultSignalingClientConfigure.m; sourceTree = "<group>"; };
 		B60A9FA222229EFE00A38A40 /* WWMessagingItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWMessagingItem.h; sourceTree = "<group>"; };
 		B60A9FA322229EFE00A38A40 /* WWMessagingItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWMessagingItem.m; sourceTree = "<group>"; };
 		B60A9FA62222C53900A38A40 /* RTCIceCandidate+WWCandidatesItemTransfer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTCIceCandidate+WWCandidatesItemTransfer.h"; sourceTree = "<group>"; };
@@ -55,8 +55,8 @@
 		B60C817C2220ECCD00DBF3B0 /* WeiWebRTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiWebRTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60C817F2220ECCD00DBF3B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B60C81802220ECCD00DBF3B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B60C81822220ECCD00DBF3B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B60C81832220ECCD00DBF3B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B60C81822220ECCD00DBF3B0 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B60C81832220ECCD00DBF3B0 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		B60C81862220ECCD00DBF3B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B60C81882220ECCF00DBF3B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B60C818B2220ECCF00DBF3B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,14 +87,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B60A9F9A2222762000A38A40 /* Config */ = {
+		B6055A452225B0AB0016F9B3 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B60A9FAE2222DDBD00A38A40 /* WWChatViewController.m */,
+				B60C81822220ECCD00DBF3B0 /* HomeViewController.h */,
+				B60C81832220ECCD00DBF3B0 /* HomeViewController.m */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		B60A9F9A2222762000A38A40 /* Configure */ = {
 			isa = PBXGroup;
 			children = (
 				B60A9F9B2222762E00A38A40 /* WWSignalingClientConfigure.h */,
-				B60A9F9E2222792000A38A40 /* WWFakeSignalingClientConfigure.h */,
-				B60A9F9F2222792000A38A40 /* WWFakeSignalingClientConfigure.m */,
+				B60A9F9E2222792000A38A40 /* WWDefaultSignalingClientConfigure.h */,
+				B60A9F9F2222792000A38A40 /* WWDefaultSignalingClientConfigure.m */,
 			);
-			path = Config;
+			path = Configure;
 			sourceTree = "<group>";
 		};
 		B60A9FA122229EDA00A38A40 /* Model */ = {
@@ -129,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				B60A9FAD2222DDBD00A38A40 /* WWChatViewController.h */,
-				B60A9FAE2222DDBD00A38A40 /* WWChatViewController.m */,
 			);
 			path = ChatViewController;
 			sourceTree = "<group>";
@@ -157,11 +166,10 @@
 			children = (
 				B60A9FA52222C51C00A38A40 /* Category */,
 				B60A9FAC2222DD8200A38A40 /* ChatViewController */,
+				B6055A452225B0AB0016F9B3 /* HomeViewController */,
 				B60C81952220EE0700DBF3B0 /* Client */,
 				B60C817F2220ECCD00DBF3B0 /* AppDelegate.h */,
 				B60C81802220ECCD00DBF3B0 /* AppDelegate.m */,
-				B60C81822220ECCD00DBF3B0 /* ViewController.h */,
-				B60C81832220ECCD00DBF3B0 /* ViewController.m */,
 				B60C81852220ECCD00DBF3B0 /* Main.storyboard */,
 				B60C81882220ECCF00DBF3B0 /* Assets.xcassets */,
 				B60C818A2220ECCF00DBF3B0 /* LaunchScreen.storyboard */,
@@ -175,7 +183,7 @@
 		B60C81952220EE0700DBF3B0 /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				B60A9F9A2222762000A38A40 /* Config */,
+				B60A9F9A2222762000A38A40 /* Configure */,
 				B60A9FA122229EDA00A38A40 /* Model */,
 				B60C81962220EE1B00DBF3B0 /* WWWebRTCClient.h */,
 				B60C81972220EE1B00DBF3B0 /* WWWebRTCClient.m */,
@@ -315,9 +323,9 @@
 			files = (
 				B60A9FAB2222C79900A38A40 /* WWCandidatesItem.m in Sources */,
 				B60A9FB22223FBB300A38A40 /* RTCCameraVideoCapturer+FaceDetection.m in Sources */,
-				B60C81842220ECCD00DBF3B0 /* ViewController.m in Sources */,
+				B60C81842220ECCD00DBF3B0 /* HomeViewController.m in Sources */,
 				B60C818F2220ECCF00DBF3B0 /* main.m in Sources */,
-				B60A9FA02222792000A38A40 /* WWFakeSignalingClientConfigure.m in Sources */,
+				B60A9FA02222792000A38A40 /* WWDefaultSignalingClientConfigure.m in Sources */,
 				B60A9FAF2222DDBD00A38A40 /* WWChatViewController.m in Sources */,
 				B60C81982220EE1B00DBF3B0 /* WWWebRTCClient.m in Sources */,
 				B60A9FA82222C53900A38A40 /* RTCIceCandidate+WWCandidatesItemTransfer.m in Sources */,

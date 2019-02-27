@@ -49,8 +49,9 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     
     if (self.faceDetectionRequest) {
         CVPixelBufferRef pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
-        VNImageRequestHandler *imageRequestHandler = [[VNImageRequestHandler alloc] initWithCVPixelBuffer:pixelBuffer options:@{}];
+        VNImageRequestHandler *imageRequestHandler = [[VNImageRequestHandler alloc] initWithCVPixelBuffer:pixelBuffer orientation:kCGImagePropertyOrientationRight options:@{}];
         NSError *error;
+
         [imageRequestHandler performRequests:@[self.faceDetectionRequest] error:&error];
     }
 }

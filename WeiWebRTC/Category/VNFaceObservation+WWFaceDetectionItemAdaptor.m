@@ -14,7 +14,7 @@
 - (WWFaceDetectionItem *)toWWFaceDetectionItem {
     WWFaceDetectionItem *item = [WWFaceDetectionItem new];
     item.x = @(self.boundingBox.origin.x);
-    item.y = @(self.boundingBox.origin.x);
+    item.y = @(self.boundingBox.origin.y);
     item.width = @(self.boundingBox.size.width);
     item.height = @(self.boundingBox.size.height);
     return item;
