@@ -11,6 +11,7 @@
 		B60332E32224E06800477947 /* WWFaceDetectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B60332E22224E06800477947 /* WWFaceDetectionItem.m */; };
 		B60332E62224E17F00477947 /* VNFaceObservation+WWFaceDetectionItemAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B60332E52224E17F00477947 /* VNFaceObservation+WWFaceDetectionItemAdaptor.m */; };
 		B60332E92224E7D400477947 /* WWFaceDetectionResultsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B60332E82224E7D400477947 /* WWFaceDetectionResultsItem.m */; };
+		B60465BD22266DD800929495 /* WeiWebRTCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B60465BC22266DD800929495 /* WeiWebRTCTests.m */; };
 		B60A9F992222757C00A38A40 /* WWSignalingClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9F982222757C00A38A40 /* WWSignalingClient.m */; };
 		B60A9FA02222792000A38A40 /* WWDefaultSignalingClientConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9F9F2222792000A38A40 /* WWDefaultSignalingClientConfigure.m */; };
 		B60A9FA422229EFE00A38A40 /* WWMessagingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A9FA322229EFE00A38A40 /* WWMessagingItem.m */; };
@@ -27,6 +28,16 @@
 		B60C81982220EE1B00DBF3B0 /* WWWebRTCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C81972220EE1B00DBF3B0 /* WWWebRTCClient.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B60465BF22266DD800929495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B60C81742220ECCD00DBF3B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B60C817B2220ECCD00DBF3B0;
+			remoteInfo = WeiWebRTC;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		6268C7E8251359D5FB074E2B /* Pods-WeiWebRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiWebRTC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeiWebRTC/Pods-WeiWebRTC.debug.xcconfig"; sourceTree = "<group>"; };
 		9599C5D53E2C29CB989B73B4 /* libPods-WeiWebRTC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeiWebRTC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +47,9 @@
 		B60332E52224E17F00477947 /* VNFaceObservation+WWFaceDetectionItemAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "VNFaceObservation+WWFaceDetectionItemAdaptor.m"; sourceTree = "<group>"; };
 		B60332E72224E7D400477947 /* WWFaceDetectionResultsItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWFaceDetectionResultsItem.h; sourceTree = "<group>"; };
 		B60332E82224E7D400477947 /* WWFaceDetectionResultsItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWFaceDetectionResultsItem.m; sourceTree = "<group>"; };
+		B60465BA22266DD800929495 /* WeiWebRTCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiWebRTCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60465BC22266DD800929495 /* WeiWebRTCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiWebRTCTests.m; sourceTree = "<group>"; };
+		B60465BE22266DD800929495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B60A9F962222739400A38A40 /* WeiWebRTCPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiWebRTCPrefixHeader.pch; sourceTree = "<group>"; };
 		B60A9F972222757C00A38A40 /* WWSignalingClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWSignalingClient.h; sourceTree = "<group>"; };
 		B60A9F982222757C00A38A40 /* WWSignalingClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWSignalingClient.m; sourceTree = "<group>"; };
@@ -68,6 +82,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B60465B722266DD800929495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B60C81792220ECCD00DBF3B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,6 +106,15 @@
 				9599C5D53E2C29CB989B73B4 /* libPods-WeiWebRTC.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B60465BB22266DD800929495 /* WeiWebRTCTests */ = {
+			isa = PBXGroup;
+			children = (
+				B60465BC22266DD800929495 /* WeiWebRTCTests.m */,
+				B60465BE22266DD800929495 /* Info.plist */,
+			);
+			path = WeiWebRTCTests;
 			sourceTree = "<group>";
 		};
 		B6055A452225B0AB0016F9B3 /* HomeViewController */ = {
@@ -147,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				B60C817E2220ECCD00DBF3B0 /* WeiWebRTC */,
+				B60465BB22266DD800929495 /* WeiWebRTCTests */,
 				B60C817D2220ECCD00DBF3B0 /* Products */,
 				EB00724594710BA2A1DFAAB6 /* Pods */,
 				22B20E0C420CE4C64633A00B /* Frameworks */,
@@ -157,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				B60C817C2220ECCD00DBF3B0 /* WeiWebRTC.app */,
+				B60465BA22266DD800929495 /* WeiWebRTCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +237,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B60465B922266DD800929495 /* WeiWebRTCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B60465C122266DD900929495 /* Build configuration list for PBXNativeTarget "WeiWebRTCTests" */;
+			buildPhases = (
+				B60465B622266DD800929495 /* Sources */,
+				B60465B722266DD800929495 /* Frameworks */,
+				B60465B822266DD800929495 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B60465C022266DD800929495 /* PBXTargetDependency */,
+			);
+			name = WeiWebRTCTests;
+			productName = WeiWebRTCTests;
+			productReference = B60465BA22266DD800929495 /* WeiWebRTCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B60C817B2220ECCD00DBF3B0 /* WeiWebRTC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B60C81922220ECCF00DBF3B0 /* Build configuration list for PBXNativeTarget "WeiWebRTC" */;
@@ -233,6 +283,9 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = wei;
 				TargetAttributes = {
+					B60465B922266DD800929495 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					B60C817B2220ECCD00DBF3B0 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -252,11 +305,19 @@
 			projectRoot = "";
 			targets = (
 				B60C817B2220ECCD00DBF3B0 /* WeiWebRTC */,
+				B60465B922266DD800929495 /* WeiWebRTCTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B60465B822266DD800929495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B60C817A2220ECCD00DBF3B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,6 +378,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B60465B622266DD800929495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60465BD22266DD800929495 /* WeiWebRTCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B60C81782220ECCD00DBF3B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +409,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B60465C022266DD800929495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B60C817B2220ECCD00DBF3B0 /* WeiWebRTC */;
+			targetProxy = B60465BF22266DD800929495 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		B60C81852220ECCD00DBF3B0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -360,6 +437,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B60465C222266DD900929495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WeiWebRTCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.wei.snake.test.WeiWebRTCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B60465C322266DD900929495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WeiWebRTCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.wei.snake.test.WeiWebRTCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B60C81902220ECCF00DBF3B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -519,6 +628,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B60465C122266DD900929495 /* Build configuration list for PBXNativeTarget "WeiWebRTCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60465C222266DD900929495 /* Debug */,
+				B60465C322266DD900929495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B60C81772220ECCD00DBF3B0 /* Build configuration list for PBXProject "WeiWebRTC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
