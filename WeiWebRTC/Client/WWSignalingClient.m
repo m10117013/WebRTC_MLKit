@@ -73,7 +73,7 @@
 }
 
 - (BOOL)sendCandidates:(RTCIceCandidate *)candidate {
-    WWCandidatesItem *item = [RTCIceCandidate transferRTCIceCandidate2WWCandidatesItem:candidate];
+    WWCandidatesItem *item = [candidate toWWCandidatesItem];
     NSData *data = [NSJSONSerialization dataWithJSONObject:[MTLJSONAdapter JSONDictionaryFromModel:item] options:NSJSONWritingPrettyPrinted error:nil];
     return  [self sendData:[[WWMessagingItem alloc] initWithType:MessagingItemCandidates message: [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]]];
 }

@@ -14,18 +14,12 @@
 
 /**
  transfer WWCandidatesItem to RTCIceCandidate
-
- @param item <#item description#>
- @return <#return value description#>
  */
 + (RTCIceCandidate *)transferWWCandidatesItem2RTCIceCandidate:(WWCandidatesItem *)item;
 
 /**
  transfer RTCIceCandidate to WWCandidatesItem
-
- @param item <#item description#>
- @return <#return value description#>
  */
-+ (WWCandidatesItem *)transferRTCIceCandidate2WWCandidatesItem:(RTCIceCandidate *)item;
+- (WWCandidatesItem *)toWWCandidatesItem;
 
 @end

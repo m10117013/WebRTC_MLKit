@@ -97,9 +97,9 @@
 
 - (void)WWWebRTCClient:(nonnull WWWebRTCClient *)client didReceiveFaceResults:(nonnull WWFaceDetectionResultsItem *)result {
     __weak typeof(self) weakSelf = self;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [weakSelf removeMaskLayer];
-    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [weakSelf removeMaskLayer];
+//    });
     [self removeMaskLayer];
     [result.results enumerateObjectsUsingBlock:^(WWFaceDetectionItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         CGRect face = CGRectMake([obj.x doubleValue], [obj.y doubleValue], [obj.width doubleValue], [obj.height doubleValue]);

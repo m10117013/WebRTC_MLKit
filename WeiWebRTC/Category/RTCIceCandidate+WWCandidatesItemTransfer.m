@@ -11,16 +11,15 @@
 
 @implementation RTCIceCandidate(WWCandidatesItemTransfer)
 
-
 + (RTCIceCandidate *)transferWWCandidatesItem2RTCIceCandidate:(WWCandidatesItem *)item {
   return [[RTCIceCandidate alloc] initWithSdp:item.sdp sdpMLineIndex:(int)item.sdpMLineIndex.integerValue sdpMid:item.sdpMid];
 }
 
-+ (WWCandidatesItem *)transferRTCIceCandidate2WWCandidatesItem:(RTCIceCandidate *)candidate {
+- (WWCandidatesItem *)toWWCandidatesItem {
     WWCandidatesItem *item = [[WWCandidatesItem alloc] init];
-    item.sdpMid = candidate.sdpMid;
-    item.sdpMLineIndex = @(candidate.sdpMLineIndex);
-    item.sdp = candidate.sdp;
+    item.sdpMid = self.sdpMid;
+    item.sdpMLineIndex = @(self.sdpMLineIndex);
+    item.sdp = self.sdp;
     return item;
 }
 

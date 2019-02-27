@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RTCCameraVideoCapturer (FaceDetection)
 
 /**
- start observer face recon
+ start observer
  */
 - (void)startObserverWithHandler:(VNRequestCompletionHandler)handler;
 

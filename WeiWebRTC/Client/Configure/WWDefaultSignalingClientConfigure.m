@@ -11,7 +11,7 @@
 @implementation WWDefaultSignalingClientConfigure
 
 - (NSString *)signalingServerInfo {
-    return @"http://192.168.0.5:8080";
+    return @"http://172.20.10.3:8080";
 }
 
 @end

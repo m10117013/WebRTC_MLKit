@@ -90,7 +90,6 @@
 		B6055A452225B0AB0016F9B3 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B60A9FAE2222DDBD00A38A40 /* WWChatViewController.m */,
 				B60C81822220ECCD00DBF3B0 /* HomeViewController.h */,
 				B60C81832220ECCD00DBF3B0 /* HomeViewController.m */,
 			);
@@ -139,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				B60A9FAD2222DDBD00A38A40 /* WWChatViewController.h */,
+				B60A9FAE2222DDBD00A38A40 /* WWChatViewController.m */,
 			);
 			path = ChatViewController;
 			sourceTree = "<group>";
