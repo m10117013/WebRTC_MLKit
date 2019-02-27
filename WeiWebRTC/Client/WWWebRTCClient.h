@@ -21,9 +21,9 @@
  kWWWebRTCClientNotificationPeerLeave is leave room or disconnect
  kWWWebRTCClientNotificationBeCall on remote called
  */
-extern const NSString *kWWWebRTCClientNotificationReady;
-extern const NSString *kWWWebRTCClientNotificationPeerLeave;
-extern const NSString *kWWWebRTCClientNotificationBeCall;
+extern NSString const *kWWWebRTCClientNotificationReady;
+extern NSString const *kWWWebRTCClientNotificationPeerLeave;
+extern NSString const *kWWWebRTCClientNotificationBeCall;
 
 @protocol WWWebRTCClientFaceDetectionDelegate <NSObject>
 /**

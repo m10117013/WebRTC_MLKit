@@ -15,22 +15,41 @@
 
 @protocol WWSignalingClientDelegate <NSObject>
 
+/**
+ on remote is ready for connecting
+ */
 - (void)WWSignalingClientReady:(WWSignalingClient *)client;
 
+/**
+ on did receive offer
+ */
 - (void)WWSignalingClient:(WWSignalingClient *)client didRecevieOffer:(RTCSessionDescription *)sdp;
 
+/**
+ on did receive answer
+ */
 - (void)WWSignalingClient:(WWSignalingClient *)client didRecevieAnswer:(RTCSessionDescription *)sdp;
 
-- (void)WWSignalingClient:(WWSignalingClient *)client didRecevieCandidtes:(RTCIceCandidate *)candidtes;
+/**
+ on did receive candidates
+ */
+- (void)WWSignalingClient:(WWSignalingClient *)client didRecevieCandidtes:(RTCIceCandidate *)Candidates;
 
 @optional
-
+/**
+ client did connect to server
+ */
 - (void)WWSignalingClientDidConnect:(WWSignalingClient *)client;
-
+//client did close
+/**
+ client did close
+ */
 - (void)WWSignalingClientDidClose:(WWSignalingClient *)client;
 
+/**
+ client did connect with error
+ */
 - (void)WWSignalingClientDidConnect:(WWSignalingClient *)client withError:(NSError *)error;
-
 @end
 
 @interface WWSignalingClient : NSObject
@@ -63,14 +82,18 @@
  */
 - (void)close;
 
+/**
+ send answer to server
+ */
 - (BOOL)sendAnswer:(RTCSessionDescription *)sdp;
 
+/**
+ send offer to server
+ */
 - (BOOL)sendOffer:(RTCSessionDescription *)sdp;
+
 /**
  send candidates to server
-
- @param sdp <#sdp description#>
- @return <#return value description#>
  */
 - (BOOL)sendCandidates:(RTCIceCandidate *)candidate;
 

@@ -35,11 +35,11 @@
 
 #define WWCLOG(fmt, ...) NSLog(@"WWCLOG : %@", [NSString stringWithFormat:fmt, ##__VA_ARGS__])
 
-const NSString *kWWWebRTCClientNotificationReady = @"WWWebRTCClientNotification_readyForCall";
+NSString const *kWWWebRTCClientNotificationReady = @"WWWebRTCClientNotification_readyForCall";
 
-const NSString *kWWWebRTCClientNotificationBeCall = @"WWWebRTCClientNotification_BeCall";
+NSString const *kWWWebRTCClientNotificationBeCall = @"WWWebRTCClientNotification_BeCall";
 
-const NSString *kWWWebRTCClientNotificationPeerLeave = @"WWWebRTCClientNotification_leave";
+NSString const *kWWWebRTCClientNotificationPeerLeave = @"WWWebRTCClientNotification_leave";
 
 
 @interface WWWebRTCClient () <RTCPeerConnectionDelegate,WWSignalingClientDelegate,RTCDataChannelDelegate>
@@ -244,8 +244,8 @@ const NSString *kWWWebRTCClientNotificationPeerLeave = @"WWWebRTCClientNotificat
 
 #pragma mark - WWSignalingClientDelegate
 
-- (void)WWSignalingClient:(WWSignalingClient *)client didRecevieCandidtes:(RTCIceCandidate *)candidtes {
-    [self.peerConection addIceCandidate:candidtes];
+- (void)WWSignalingClient:(WWSignalingClient *)client didRecevieCandidtes:(RTCIceCandidate *)Candidates {
+    [self.peerConection addIceCandidate:Candidates];
 }
 
 - (void)WWSignalingClientReady:(WWSignalingClient *)client {
@@ -280,9 +280,7 @@ const NSString *kWWWebRTCClientNotificationPeerLeave = @"WWWebRTCClientNotificat
 - (void)dataChannel:(nonnull RTCDataChannel *)dataChannel didReceiveMessageWithBuffer:(nonnull RTCDataBuffer *)buffer {
     
     NSData *data = buffer.data;
-    
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-    
     NSError *error = nil;
     WWFaceDetectionResultsItem *item = [MTLJSONAdapter modelOfClass:WWFaceDetectionResultsItem.class fromJSONDictionary:json error:&error];
     

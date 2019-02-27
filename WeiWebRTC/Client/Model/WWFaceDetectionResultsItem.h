@@ -13,8 +13,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WWFaceDetectionResultsItem : MTLModel <MTLJSONSerializing>
-
-
+/**
+ results
+ */
 @property (copy, nonatomic) NSArray<WWFaceDetectionItem *> *results;
 @end
 

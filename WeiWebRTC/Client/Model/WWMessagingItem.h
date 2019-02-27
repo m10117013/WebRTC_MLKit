@@ -38,11 +38,16 @@ typedef NS_ENUM(NSInteger, MessagingItemType) {
  */
 @property (copy, nonatomic) NSString *message;
 
+/**
+ decoded message
+ */
 @property (copy, nonatomic, readonly) NSString *decodedMessage;
 
 
 - (instancetype)initWithType:(MessagingItemType)type message:(NSString *)msg;
 
-
+/**
+ encode message with base64String
+ */
 - (NSString *)encode;
 @end

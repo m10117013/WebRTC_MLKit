@@ -30,7 +30,7 @@
 
 - (id<WWSignalingClientConfigure>)configure {
     if (!_configure) {
-        //if don't assign configure using fake configure
+        //if don't assign configure using default configure
         _configure = [[WWDefaultSignalingClientConfigure alloc] init];
     }
     return _configure;

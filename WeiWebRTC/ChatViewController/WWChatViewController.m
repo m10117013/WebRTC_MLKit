@@ -51,9 +51,6 @@
         RTCCameraVideoCapturer *_captureSession = ((RTCCameraVideoCapturer *)self.rtcClient.videoCapturer);
         if ([_captureSession isKindOfClass:[RTCCameraVideoCapturer class]]) {
             [_captureSession startObserverWithHandler:^(VNRequest * _Nonnull request, NSError * _Nullable error) {
-                if (request.results.count <= 0)
-                    return;
-                
                 if (self.showBoundingBoxInLocalView) {
                     [self removeMaskLayer];
                     [request.results enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -68,13 +65,14 @@
 }
 
 - (void)drawFaceboundingBox:(CGRect)face in:(UIView *)view {
+    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         CGSize imageSize = view.frame.size;
         CGFloat w = face.size.width * imageSize.width;
         CGFloat h = face.size.height * imageSize.height;
         CGFloat x = face.origin.x * imageSize.width;
         CGFloat y = imageSize.height * (1 - face.origin.y - face.size.height);//- (boundingBox.origin.y * imageSize.height) - h;
-        [self createLayer:CGRectMake(x, y, w, h) in:view.layer];
+        [weakSelf createLayer:CGRectMake(x, y, w, h) in:view.layer];
     });
 }
 
@@ -85,25 +83,29 @@
     mask.opacity = 0.5;
     mask.borderColor = UIColor.redColor.CGColor;
     mask.borderWidth = 2.0;
-    [self.maskLayers addObject:mask];
+    @synchronized (self.maskLayers) {
+        [self.maskLayers addObject:mask];
+    };
     [layer insertSublayer:mask atIndex:2];
 }
 
 - (void)removeMaskLayer {
-    [self.maskLayers enumerateObjectsUsingBlock:^(CALayer * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [obj removeFromSuperlayer];
-    }];
+    @synchronized (self.maskLayers) {
+        [self.maskLayers enumerateObjectsUsingBlock:^(CALayer * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [obj removeFromSuperlayer];
+            });
+        }];
+        [self.maskLayers removeAllObjects];
+    }
 }
 
 - (void)WWWebRTCClient:(nonnull WWWebRTCClient *)client didReceiveFaceResults:(nonnull WWFaceDetectionResultsItem *)result {
     __weak typeof(self) weakSelf = self;
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [weakSelf removeMaskLayer];
-//    });
     [self removeMaskLayer];
     [result.results enumerateObjectsUsingBlock:^(WWFaceDetectionItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         CGRect face = CGRectMake([obj.x doubleValue], [obj.y doubleValue], [obj.width doubleValue], [obj.height doubleValue]);
-        [weakSelf drawFaceboundingBox:face in:self.remoteVideoView];
+        [weakSelf drawFaceboundingBox:face in:weakSelf.remoteVideoView];
    }];
 }
 
