@@ -33,26 +33,27 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    __weak typeof(self) weakSelf = self;
     [[NSNotificationCenter defaultCenter] addObserverForName:kWWWebRTCClientNotificationReady object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
-        [self.callButton setBackgroundColor:[UIColor greenColor]];
-        [self.callButton setEnabled:YES];
-        [self.callButton setTitle:@"CALL" forState:UIControlStateNormal];
+        [weakSelf.callButton setBackgroundColor:[UIColor greenColor]];
+        [weakSelf.callButton setEnabled:YES];
+        [weakSelf.callButton setTitle:@"CALL" forState:UIControlStateNormal];
     }];
     
     //be called
     [[NSNotificationCenter defaultCenter] addObserverForName:kWWWebRTCClientNotificationBeCall object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
         UIViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"chat"];
         if ([vc isKindOfClass:[WWChatViewController class]]) {
-            ((WWChatViewController *)vc).rtcClient = self.client;
+            ((WWChatViewController *)vc).rtcClient = weakSelf.client;
             //send Offer to call peer
-            [self presentViewController:vc animated:YES completion:nil];
+            [weakSelf presentViewController:vc animated:YES completion:nil];
         }
     }];
     
     [[NSNotificationCenter defaultCenter] addObserverForName:kWWWebRTCClientNotificationPeerLeave object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
-        [self.callButton setBackgroundColor:[UIColor lightGrayColor]];
-        [self.callButton setTitle:@"ROOM EMPTY" forState:UIControlStateNormal];
-        [self.callButton setEnabled:NO];
+        [weakSelf.callButton setBackgroundColor:[UIColor lightGrayColor]];
+        [weakSelf.callButton setTitle:@"ROOM EMPTY" forState:UIControlStateNormal];
+        [weakSelf.callButton setEnabled:NO];
     }];
     
     

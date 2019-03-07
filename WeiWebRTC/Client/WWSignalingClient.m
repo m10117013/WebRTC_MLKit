@@ -100,7 +100,7 @@
         id json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         NSError *error = nil;
         WWMessagingItem *messageItem = [MTLJSONAdapter modelOfClass:WWMessagingItem.class fromJSONDictionary:json error:&error];
-        NSAssert(messageItem != nil, @"error on paring message item");
+        NSAssert(messageItem != nil, @"error on parsing message item");
         
         if (messageItem.type == MessagingItemTypeReady) {
             [self.delegate WWSignalingClientReady:self];

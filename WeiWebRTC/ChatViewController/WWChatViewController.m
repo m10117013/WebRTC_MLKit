@@ -47,18 +47,19 @@
 }
 
 - (void)startObseverFace {
+    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        RTCCameraVideoCapturer *_captureSession = ((RTCCameraVideoCapturer *)self.rtcClient.videoCapturer);
+        RTCCameraVideoCapturer *_captureSession = ((RTCCameraVideoCapturer *)weakSelf.rtcClient.videoCapturer);
         if ([_captureSession isKindOfClass:[RTCCameraVideoCapturer class]]) {
             [_captureSession startObserverWithHandler:^(VNRequest * _Nonnull request, NSError * _Nullable error) {
-                if (self.showBoundingBoxInLocalView) {
-                    [self removeMaskLayer];
+                if (weakSelf.showBoundingBoxInLocalView) {
+                    [weakSelf removeMaskLayer];
                     [request.results enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                         if ([obj isKindOfClass:[VNFaceObservation class]])
-                            [self drawFaceboundingBox:[obj boundingBox] in:self.localView];
+                            [weakSelf drawFaceboundingBox:[obj boundingBox] in:weakSelf.localView];
                     }];
                 }
-                [self.rtcClient sendFaceBouning:request.results];
+                [weakSelf.rtcClient sendFaceBouning:request.results];
             }];
         }
     });
